@@ -13,6 +13,9 @@ d) fazer um programa (em C/++ ou Python) para testar o seu TAD
 
 """
 
+from ast import If
+
+
 class live:
     titulo = ""
     data = ""
@@ -21,4 +24,31 @@ class live:
     apresentador = ""
     artista = ""
 
+def novaLive():
+    nl = live()
+    nl.titulo=input("Digite o novo titulo")
+    nl.data=input("Digite o novo titulo")
+    nl.hora=input("Digite o novo titulo")
+    nl.plataforma=input("Digite o novo titulo")
+    nl.apresentador=input("Digite o novo titulo")
+    nl.artista=input("Digite o novo titulo")
+    return nl
 
+def exibir(nl):
+    dados = "\n "
+    dados+= nl.titulo
+    dados = "\n "
+    dados+= nl.data
+    dados = "\n "
+    dados+= nl.hora
+    dados = "\n "
+    dados+= nl.plataforma
+    dados = "\n "
+    dados+= nl.apresentador
+    dados = "\n "
+    dados+= nl.artista
+    dados = "\n "
+    return dados
+
+def procurarLivePorArtista(nl, artista):
+    return nl
