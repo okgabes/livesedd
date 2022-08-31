@@ -13,8 +13,6 @@ d) fazer um programa (em C/++ ou Python) para testar o seu TAD
 
 """
 
-from ast import If
-
 
 class live:
     titulo = ""
